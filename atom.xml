@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>precious life</title>
   
-  
+  <subtitle>Take it easy and relax yourself</subtitle>
   <link href="https://usageforshen.github.io/atom.xml" rel="self"/>
   
   <link href="https://usageforshen.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://usageforshen.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>ZY Shen</name>
     
   </author>
   

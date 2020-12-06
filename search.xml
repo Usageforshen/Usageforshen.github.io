@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title>test page</title>
-      <link href="2020/12/06/test-page/"/>
-      <url>2020/12/06/test-page/</url>
-      
-        <content type="html"><![CDATA[<h1 id="this-is-just-for-testing"><a href="#this-is-just-for-testing" class="headerlink" title="this is just for testing"></a>this is just for testing</h1>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>计数质数的别致方法</title>
       <link href="2020/12/06/ji-shu-zhi-shu-de-bie-zhi-fang-fa/"/>
       <url>2020/12/06/ji-shu-zhi-shu-de-bie-zhi-fang-fa/</url>
@@ -31,18 +18,44 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> Leetcode </tag>
+            
+        </tags>
+      
     </entry>
     
     
     
     <entry>
-      <title>First bolg</title>
-      <link href="2020/12/06/first-bolg/"/>
-      <url>2020/12/06/first-bolg/</url>
+      <title>用Hexo搭建个人网站的流程（算是小教程）</title>
+      <link href="2020/12/06/yong-hexo-da-jian-ge-ren-wang-zhan-de-liu-cheng-suan-shi-xiao-jiao-cheng/"/>
+      <url>2020/12/06/yong-hexo-da-jian-ge-ren-wang-zhan-de-liu-cheng-suan-shi-xiao-jiao-cheng/</url>
       
-        <content type="html"><![CDATA[<h1 id="This-is-my-first-try-in-blog"><a href="#This-is-my-first-try-in-blog" class="headerlink" title="This is my first try in blog"></a>This is my first try in blog</h1><h2 id="Just-for-testing-there-is-no-real-content"><a href="#Just-for-testing-there-is-no-real-content" class="headerlink" title="Just for testing,there is no real content."></a>Just for testing,there is no real content.</h2>]]></content>
+        <content type="html"><![CDATA[<h1 id="使用Hexo-node-js-Git简单搭建个人Blog的记录"><a href="#使用Hexo-node-js-Git简单搭建个人Blog的记录" class="headerlink" title="使用Hexo + node.js + Git简单搭建个人Blog的记录"></a>使用Hexo + node.js + Git简单搭建个人Blog的记录</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>搭建个人Blog的用意主要是用于记录研究生期间的生活以及学习。</p><h2 id="搭建个人Bolg的必备工具"><a href="#搭建个人Bolg的必备工具" class="headerlink" title="搭建个人Bolg的必备工具"></a>搭建个人Bolg的必备工具</h2><ol><li><p>Hexo</p></li><li><p>Node.js</p></li><li><p>Git</p></li><li><p>代码编辑器  - 用于修改config的必要工具</p></li><li><p>一定的代码阅读能力（雾</p></li></ol><h2 id="第一步-Git的安装和基本使用"><a href="#第一步-Git的安装和基本使用" class="headerlink" title="第一步 Git的安装和基本使用"></a>第一步 Git的安装和基本使用</h2><p>我实在window平台上进行搭建和部署的，故直接再<a href="https://git-scm.com/downloads">Git官网</a>下载对应平台版本即可<img src="C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20201206215445893.png" alt="image-20201206215445893"></p><p>下载后的exe可以说说是傻瓜包，直接next-next即可。</p><p>最后在开始菜单栏会出现表示安装成功，但是如果第一次安装的话必须要配置用户信息。<img src="C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20201206215734304.png" alt="image-20201206215734304"></p><p>要在git bash中配置用户的用户名和邮箱地址，具体操作如下</p><pre class="line-numbers language-git" data-language="git"><code class="language-git"><span class="token command">$ git config<span class="token parameter"> --global</span> user.name </span><span class="token string">"你的用户名"</span><span class="token command">$ git config<span class="token parameter"> --global</span> user.email </span><span class="token string">"你的邮箱地址"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>如果用了 <strong>–global</strong> 选项，那么更改的配置文件就是位于你用户主目录下的那个，以后你所有的项目都会默认使用这里配置的用户信息。</p><p>如果要在某个特定的项目中使用其他名字或者电邮，只要去掉 –global 选项重新配置即可，新的设定保存在当前项目的 .git/config 文件里。</p><p>全部操作完成之后算是Git部分完成了。</p><p><strong>恭喜你完成了第一步！！！（congratulation！！！）</strong></p><h2 id="第二部分-Node-js的安装和配置"><a href="#第二部分-Node-js的安装和配置" class="headerlink" title="第二部分 Node.js的安装和配置"></a>第二部分 Node.js的安装和配置</h2><p>照例第一步node.js官方中文网站下载安装<a href="https://nodejs.org/zh-cn/">node.js官网</a>(建议安装长期支持的稳定版本)</p><p><img src="C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20201206220543042.png" alt="image-20201206220543042"></p><p>安装过程省略基本全程next-next（如果安装出现特定的问题建议百度哦）</p><p>Node.js继承了npm工具，全部安装结束之后为了验证安装是否成，进入到cmd(win+r)中输入如图中的指令，如出现如图中的node和npm版本号则说明安装成功。</p><p><img src="C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20201206220857299.png" alt="image-20201206220857299"></p><p>**到这里则说明node和npm安装成功！ congratulation！ **</p><h2 id="第三部分-基于node-js安装Hexo"><a href="#第三部分-基于node-js安装Hexo" class="headerlink" title="第三部分 基于node.js安装Hexo"></a>第三部分 基于node.js安装Hexo</h2><p>因为我是win平台，所以可以省略的cmd指令就用win有好的GUI操作来代替。</p><p>首先创建一个保存所有的工程文件的文件夹，在win平台操作则非常简单，直接选择一个盘符中创建一个文件夹。再打开CMD（接下来就是cmd指令居多），通过cd指令切换到创建好的文件夹路径中。通过Cmd或者git bash 输入下面的指令来安装 。</p><pre class="line-numbers language-none"><code class="language-none">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装完成之后再用指令来查看版本即可知道安装成功与否。</p><pre class="line-numbers language-none"><code class="language-none">hexo -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果出现了安装过程异常缓慢或者直接卡主不动的情况下其实是正常的，我们可以用npm安装淘宝的cnpm管理器，用淘宝的源会快一些。指令如下。</p><pre class="line-numbers language-none"><code class="language-none">npm install -g cnpm --registry&#x3D;http:&#x2F;&#x2F;registry.npm.taobao.org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装成功之后，继续在这个路径下初始hexo生成和初始化博客，指令如下。</p><pre class="line-numbers language-none"><code class="language-none">hexo init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>等待整个init的过程完成之后在生成的文件夹之中会生成许多的配置文件，我们之后再继续讲解配置网站内容的部分。</p><p>接下来执行以下的操作来在本机上启动blog服务。</p><pre class="line-numbers language-none"><code class="language-none">hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>然后在cmd最后会出现用于访问blog的地址为 **<a href="http://localhost:4000/**%E5%B0%B1%E6%98%AF%E5%9C%A8%E6%9C%AC%E6%9C%BA4000%E7%AB%AF%E5%8F%A3%E3%80%82">http://localhost:4000/**就是在本机4000端口。</a></p><p>打开浏览器输入url即可访问到启动好的blog，不过都是Hexo初始化的主题和内容，还有一篇初始的博客，内容为Hexo的基本操作  就是 hexo g hexo s hexo clean和写新博文hexo new “name”等等的一系列指令。页面如下。</p><p><img src="C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20201206223503004.png" alt="image-20201206223503004"></p><p><strong>这只是最基本的布局和样式，如果想要让自己的blog更加好看优美需要额外的配置，让页面更好看的操作教程我会再单独的出一篇blog，本次只单独讲最简单启动和部署。</strong></p><h2 id="第四部分-将自己的网站托管到Git上"><a href="#第四部分-将自己的网站托管到Git上" class="headerlink" title="第四部分 将自己的网站托管到Git上"></a>第四部分 将自己的网站托管到Git上</h2><p>之前的操作下来只能在本地启动Hexo的服务，要打开也只能通过本机的localhost 4000端口上。</p><p>托管在第三方上可以让自己的网站Blog随时随地的访问，我们选择把它托管在最受欢迎的Github上，这也是我们首先安装git的原因。</p><p>首先第一步是在web版的github上进入到自己的个人界面新建一个仓库(Respositories)，新建的过程中要把仓库的名称建立得和自己ID一样才可以，具体的格式为       **你的用户ID.github.io   **，穿件完成之后接下来就是要把自己的网站部署到刚刚创建的仓库中。</p><p><strong>不过安装的过程中还要依赖一个额外的插件，依赖这个插件才能完成简单的部署。需要再次使用之前安装的cnpm来完成快速的安装 hexo-deloyer-git</strong> 。  操作的代码如下。</p><pre class="line-numbers language-none"><code class="language-none">cnpm install --save hexo-deployer-git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>接下里等待安装完成即可，倘若是之前切换了淘宝的源安装可能就很快，但是直接用npm可能会很慢或者卡主不动。</p><p>接下来就是配置这个插件。<strong>首先在blog的根目录下打开 _config.yml配置文件找到deployment选项下 修改type为git 再添加repo项，值为你在github上新创建的仓库url,还要选择你上传到的branch</strong>。具体如下。</p><pre class="line-numbers language-none"><code class="language-none"># Deployment## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;one-command-deploymentdeploy:  type: &#39;git&#39;  repo: https:&#x2F;&#x2F;github.com&quot;你的仓库“  branch : main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><strong>这里有个小插曲： github在2020年10月分把原本的默认分支master修改为了main（原因呢，是在阿妹你看因为黑人小伙子弗洛伊德之死引发的大规模抗议使得人们看到master容易联想到不好的东西，所以改为了main）</strong>。</p><p>配置完成之后就是部署你的所有文件到github</p><p>使用cmd指令如下即可</p><pre class="line-numbers language-none"><code class="language-none">hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>然后可以在你的github页面对应仓库看到新的提交改动。</p><p>接下来使用**https://“仓库名.github.io/**即可访问到你部署在github上的blog了。</p><p><strong>congratulation！   你已经完成了你的Blog！   在之后我会继续给出如何写新的博文以及修改blog主题和样式让你的blog更加好看，请继续跟进和关注本Blog！！！</strong></p><p><strong>可能会用到的Hexo指令</strong></p><pre class="line-numbers language-none"><code class="language-none">hexo clean   # hexo clean清除缓存文件 (db.json) 和已生成的静态文件 (public)。hexo g       #生成网站静态文件到默认设置的 public 文件夹。hexo s #启动本地服务器，用于预览主题。默认地址： http:&#x2F;&#x2F;localhost:4000&#x2F;。hexo d #自动生成网站静态文件，并部署到设定的仓库。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>​    ## 如果您还有兴趣或者这篇帮助到了你，请继续关注哦，接下来会在这篇blog的基础之上继续介绍发布博文的操作和修改主题和样式来让让你的blog更加personalized。</p>]]></content>
       
       
+      <categories>
+          
+          <category> 个人Blog </category>
+          
+          <category> 博客教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Git </tag>
+            
+            <tag> Blog教程 </tag>
+            
+        </tags>
       
     </entry>
     

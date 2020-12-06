@@ -6,7 +6,7 @@
   <link href="https://usageforshen.github.io/atom.xml" rel="self"/>
   
   <link href="https://usageforshen.github.io/"/>
-  <updated>2020-12-06T11:19:31.114Z</updated>
+  <updated>2020-12-06T12:52:19.117Z</updated>
   <id>https://usageforshen.github.io/</id>
   
   <author>
@@ -17,32 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test page</title>
-    <link href="https://usageforshen.github.io/2020/12/06/test-page/"/>
-    <id>https://usageforshen.github.io/2020/12/06/test-page/</id>
-    <published>2020-12-06T11:18:54.000Z</published>
-    <updated>2020-12-06T11:19:31.114Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;this-is-just-for-testing&quot;&gt;&lt;a href=&quot;#this-is-just-for-testing&quot; class=&quot;headerlink&quot; title=&quot;this is just for testing&quot;&gt;&lt;/a&gt;this is just</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>计数质数的别致方法</title>
     <link href="https://usageforshen.github.io/2020/12/06/ji-shu-zhi-shu-de-bie-zhi-fang-fa/"/>
     <id>https://usageforshen.github.io/2020/12/06/ji-shu-zhi-shu-de-bie-zhi-fang-fa/</id>
     <published>2020-12-06T10:29:42.000Z</published>
-    <updated>2020-12-06T11:05:05.331Z</updated>
+    <updated>2020-12-06T12:52:19.117Z</updated>
     
     
       
@@ -58,26 +37,40 @@
     <category term="Leetcode" scheme="https://usageforshen.github.io/categories/Leetcode/"/>
     
     
+    <category term="算法" scheme="https://usageforshen.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="Leetcode" scheme="https://usageforshen.github.io/tags/Leetcode/"/>
+    
   </entry>
   
   <entry>
-    <title>First bolg</title>
-    <link href="https://usageforshen.github.io/2020/12/06/first-bolg/"/>
-    <id>https://usageforshen.github.io/2020/12/06/first-bolg/</id>
-    <published>2020-12-06T05:55:17.000Z</published>
-    <updated>2020-12-06T11:06:59.952Z</updated>
+    <title>用Hexo搭建个人网站的流程（算是小教程）</title>
+    <link href="https://usageforshen.github.io/2020/12/06/yong-hexo-da-jian-ge-ren-wang-zhan-de-liu-cheng-suan-shi-xiao-jiao-cheng/"/>
+    <id>https://usageforshen.github.io/2020/12/06/yong-hexo-da-jian-ge-ren-wang-zhan-de-liu-cheng-suan-shi-xiao-jiao-cheng/</id>
+    <published>2020-12-06T07:39:48.000Z</published>
+    <updated>2020-12-06T15:06:39.047Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;This-is-my-first-try-in-blog&quot;&gt;&lt;a href=&quot;#This-is-my-first-try-in-blog&quot; class=&quot;headerlink&quot; title=&quot;This is my first try in</summary>
+    <summary type="html">&lt;h1 id=&quot;使用Hexo-node-js-Git简单搭建个人Blog的记录&quot;&gt;&lt;a href=&quot;#使用Hexo-node-js-Git简单搭建个人Blog的记录&quot; class=&quot;headerlink&quot; title=&quot;使用Hexo + node.js +</summary>
         
       
     
     
     
+    <category term="个人Blog" scheme="https://usageforshen.github.io/categories/%E4%B8%AA%E4%BA%BABlog/"/>
+    
+    <category term="博客教程" scheme="https://usageforshen.github.io/categories/%E4%B8%AA%E4%BA%BABlog/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Hexo" scheme="https://usageforshen.github.io/tags/Hexo/"/>
+    
+    <category term="Git" scheme="https://usageforshen.github.io/tags/Git/"/>
+    
+    <category term="Blog教程" scheme="https://usageforshen.github.io/tags/Blog%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   

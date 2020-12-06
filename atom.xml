@@ -6,7 +6,7 @@
   <link href="https://usageforshen.github.io/atom.xml" rel="self"/>
   
   <link href="https://usageforshen.github.io/"/>
-  <updated>2020-12-06T05:56:36.399Z</updated>
+  <updated>2020-12-06T11:19:31.114Z</updated>
   <id>https://usageforshen.github.io/</id>
   
   <author>
@@ -17,18 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>First bolg</title>
-    <link href="https://usageforshen.github.io/2020/12/06/first-bolg/"/>
-    <id>https://usageforshen.github.io/2020/12/06/first-bolg/</id>
-    <published>2020-12-06T05:55:17.000Z</published>
-    <updated>2020-12-06T05:56:36.399Z</updated>
+    <title>test page</title>
+    <link href="https://usageforshen.github.io/2020/12/06/test-page/"/>
+    <id>https://usageforshen.github.io/2020/12/06/test-page/</id>
+    <published>2020-12-06T11:18:54.000Z</published>
+    <updated>2020-12-06T11:19:31.114Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;This-is-my-first-try-in-blog&quot;&gt;&lt;a href=&quot;#This-is-my-first-try-in-blog&quot; class=&quot;headerlink&quot; title=&quot;This is my first try in</summary>
+    <summary type="html">&lt;h1 id=&quot;this-is-just-for-testing&quot;&gt;&lt;a href=&quot;#this-is-just-for-testing&quot; class=&quot;headerlink&quot; title=&quot;this is just for testing&quot;&gt;&lt;/a&gt;this is just</summary>
         
       
     
@@ -38,18 +38,41 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://usageforshen.github.io/2020/12/06/hello-world/"/>
-    <id>https://usageforshen.github.io/2020/12/06/hello-world/</id>
-    <published>2020-12-06T05:52:59.529Z</published>
-    <updated>2020-12-06T05:52:59.529Z</updated>
+    <title>计数质数的别致方法</title>
+    <link href="https://usageforshen.github.io/2020/12/06/ji-shu-zhi-shu-de-bie-zhi-fang-fa/"/>
+    <id>https://usageforshen.github.io/2020/12/06/ji-shu-zhi-shu-de-bie-zhi-fang-fa/</id>
+    <published>2020-12-06T10:29:42.000Z</published>
+    <updated>2020-12-06T11:05:05.331Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;题目：-Leetcode-204-计数质数（统计所有小于非负整数n的质数数量）&quot;&gt;&lt;a href=&quot;#题目：-Leetcode-204-计数质数（统计所有小于非负整数n的质数数量）&quot; class=&quot;headerlink&quot; title=&quot;题目：  Leetcode</summary>
+        
+      
+    
+    
+    
+    <category term="Leetcode" scheme="https://usageforshen.github.io/categories/Leetcode/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>First bolg</title>
+    <link href="https://usageforshen.github.io/2020/12/06/first-bolg/"/>
+    <id>https://usageforshen.github.io/2020/12/06/first-bolg/</id>
+    <published>2020-12-06T05:55:17.000Z</published>
+    <updated>2020-12-06T11:06:59.952Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;This-is-my-first-try-in-blog&quot;&gt;&lt;a href=&quot;#This-is-my-first-try-in-blog&quot; class=&quot;headerlink&quot; title=&quot;This is my first try in</summary>
         
       
     

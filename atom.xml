@@ -6,7 +6,7 @@
   <link href="https://usageforshen.github.io/atom.xml" rel="self"/>
   
   <link href="https://usageforshen.github.io/"/>
-  <updated>2021-03-28T14:41:30.099Z</updated>
+  <updated>2021-03-28T14:58:43.990Z</updated>
   <id>https://usageforshen.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://usageforshen.github.io/2021/03/28/guan-yu-jue-ce-shu-yu-sui-ji-sen-lin-de-qian-xian-ren-shi/"/>
     <id>https://usageforshen.github.io/2021/03/28/guan-yu-jue-ce-shu-yu-sui-ji-sen-lin-de-qian-xian-ren-shi/</id>
     <published>2021-03-28T14:39:55.000Z</published>
-    <updated>2021-03-28T14:41:30.099Z</updated>
+    <updated>2021-03-28T14:58:43.990Z</updated>
     
     
       
@@ -34,14 +34,10 @@
     
     
     
-    <category term="学习笔记" scheme="https://usageforshen.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="机器学习" scheme="https://usageforshen.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://usageforshen.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="随机森林" scheme="https://usageforshen.github.io/tags/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/"/>
-    
-    <category term="决策树" scheme="https://usageforshen.github.io/tags/%E5%86%B3%E7%AD%96%E6%A0%91/"/>
+    <category term="随机森林和决策树" scheme="https://usageforshen.github.io/tags/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%E5%92%8C%E5%86%B3%E7%AD%96%E6%A0%91/"/>
     
     <category term="机器学习" scheme="https://usageforshen.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     

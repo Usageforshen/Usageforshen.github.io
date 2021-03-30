@@ -472,7 +472,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-03-27
+                    2021-03-30
                 </div>
                 
 
@@ -510,7 +510,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="（个人向）人脸识别，图像处理内容入门学习。"><a href="#（个人向）人脸识别，图像处理内容入门学习。" class="headerlink" title="（个人向）人脸识别，图像处理内容入门学习。"></a>（个人向）人脸识别，图像处理内容入门学习。</h1><h2 id="背景及意义"><a href="#背景及意义" class="headerlink" title="背景及意义"></a>背景及意义</h2><p>人脸识别，是基于人的脸部特征信息进行身份识别的一种生物识别技术。用摄像机或摄像头采集含有人脸的图像或视频流，并自动在图像中检测和跟踪人脸，利用人脸固有的特征信息进而对检测到的人脸进行脸部识别的一系列相关技术，通常也叫做人像识别、面部识别。是模式识别和人工智能最广泛的应用之一，通常也叫做人像识别、面部识别。</p>
-<h2 id="人脸识别过程简述"><a href="#人脸识别过程简述" class="headerlink" title="人脸识别过程简述"></a>人脸识别过程简述</h2><p><img src="https://wx4.sinaimg.cn/mw690/006pSJjJly1goykslj28yj30if0jcdj4.jpg" alt="人脸识别流程图"></p>
+<h2 id="人脸识别过程简述"><a href="#人脸识别过程简述" class="headerlink" title="人脸识别过程简述"></a>人脸识别过程简述</h2><p><img src="/2020/12/09/ren-lian-shi-bie-ru-men-nei-rong-jian-jie/p1.png" alt="人脸识别流程图"></p>
 <ol>
 <li>人脸图像采集及检测</li>
 </ol>
@@ -536,7 +536,7 @@
 <hr>
 <p><strong>gray=0.39×R＋0.5×G＋0.11×B</strong></p>
 <hr>
-<p><img src="https://wx1.sinaimg.cn/mw690/006pSJjJly1goykqzvdf5j30n202swfj.jpg" alt="灰度处理流程"></p>
+<p><img src="/2020/12/09/ren-lian-shi-bie-ru-men-nei-rong-jian-jie/p2.png" alt="灰度处理流程"></p>
 <p><strong>下面是灰度变换的方法(r为输入灰度值，s为输出灰度值)</strong></p>
 <ol>
 <li><p>​    线性变换-较多的是图像反转，图像反转得到的是图像的负片，能够有效的增强在图像暗区域的白色或者灰色细节。</p>
@@ -552,7 +552,7 @@
 <hr>
 </li>
 </ol>
-<p><img src="https://wx2.sinaimg.cn/mw690/006pSJjJly1goykr2xd6cj30ei0d2acd.jpg" alt="对数和反对数函数对应图像"></p>
+<p><img src="/2020/12/09/ren-lian-shi-bie-ru-men-nei-rong-jian-jie/p3.png" alt="对数和反对数函数对应图像"></p>
 <ol start="3">
 <li><p>幂律变换（其中c和γ为正常数[当γ&lt;1γ&lt;1时，γ的值越小，对图像低灰度值的扩展越明显；当γ&gt;1γ&gt;1时，γ的值越大，对图像高灰度值部分的扩展越明显。这样就能够显示更多的图像的低灰度或者高灰度细节。</p>
 <hr>
@@ -560,7 +560,7 @@
 <hr>
 </li>
 </ol>
-<p><img src="https://wx4.sinaimg.cn/mw690/006pSJjJly1goykr4uq2ej30ff0ditbn.jpg" alt="幂律变换对应图像"></p>
+<p><img src="/2020/12/09/ren-lian-shi-bie-ru-men-nei-rong-jian-jie/p4.png" alt="幂律变换对应图像"></p>
 <p><strong>几何矫正（具体内容略，只做简述）</strong></p>
 <p>几何校正是用来解决角度问题，主要包括：</p>
 <ul>
@@ -580,13 +580,13 @@
 <li>  均值滤波。</li>
 </ol>
 <p>作为最简单的线性滤波器之一，其先对图像中目标像素进行局部平均,再把原来的像素值替换成局部平均值。邻域的大小对滤波效果也有很大的影响，邻域窗口的尺寸越大，滤波效果也会更好，但同时也会造成大量图像细节信息的损失，即图像将会变得模糊。</p>
-<p><img src="https://wx2.sinaimg.cn/mw690/006pSJjJly1goykr79p6bj30c403vdgk.jpg" alt="均值滤波公式"></p>
+<p><img src="/2020/12/09/ren-lian-shi-bie-ru-men-nei-rong-jian-jie/p5.png" alt="均值滤波公式"></p>
 <ol start="2">
 <li>中值滤波</li>
 </ol>
 <p>中值滤波也是一种常见的非线性滤波技术。该方法主要思想是把每一个像素点的灰度值设置为该像素点邻域内的所有像素点灰度值的中值，由于该方法不依赖于邻域中与典型值差别很大的值，所以在去除椒盐噪声和脉冲噪声的同时该方法还能够很好的保留人脸图像的边缘细节信息。</p>
 <p>在图像中去3*3的矩阵，里面有9个像素点，我们将9个像素进行排序，最后将这个矩阵的中心点赋值为这九个像素的中值。如图所示。</p>
-<p><img src="https://wx2.sinaimg.cn/mw690/006pSJjJly1goykr986kzj30jw0960uo.jpg" alt="中值滤波"></p>
+<p><img src="/2020/12/09/ren-lian-shi-bie-ru-men-nei-rong-jian-jie/p6.png" alt="中值滤波"></p>
 <p><strong>图像特征提取方法</strong></p>
 <ol>
 <li><p>SIFT（尺度不变特征变换）</p>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="决策树和随机森林是个啥呢？, code">
+    <meta name="keywords" content="《剑指offer》part3, code">
     <meta name="description" content="Record my graduate life">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>决策树和随机森林是个啥呢？ | Precious Life</title>
+    <title>《剑指offer》part3 | Precious Life</title>
     <link rel="icon" type="image/png" href="/medias/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">决策树和随机森林是个啥呢？</h1>
+                    <h1 class="description center-align post-title">《剑指offer》part3</h1>
                 </div>
             </div>
         </div>
@@ -432,12 +432,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
-                                <span class="chip bg-color">机器学习</span>
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
                             </a>
                         
-                            <a href="/tags/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%E5%92%8C%E5%86%B3%E7%AD%96%E6%A0%91/">
-                                <span class="chip bg-color">随机森林和决策树</span>
+                            <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                                <span class="chip bg-color">剑指offer</span>
                             </a>
                         
                     </div>
@@ -448,8 +448,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                机器学习
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/" class="post-category">
+                                前端笔记
                             </a>
                         
                     </div>
@@ -461,28 +461,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-28
+                    2021-09-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-01
+                    2021-10-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.4k
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    5 分
                 </div>
                 
 
@@ -505,84 +505,145 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="关于决策树与随机森林的浅显认识"><a href="#关于决策树与随机森林的浅显认识" class="headerlink" title="关于决策树与随机森林的浅显认识"></a>关于决策树与随机森林的浅显认识</h1><h2 id="决策树是啥？"><a href="#决策树是啥？" class="headerlink" title="决策树是啥？"></a>决策树是啥？</h2><ul>
-<li>百度百科上对于决策树的一些解释</li>
-</ul>
-<p>决策树是一种树形结构，其中每个内部节点表示一个属性上的测试，每个分支代表一个测试输出，每个叶节点代表一种类别。</p>
-<p>决策树(Decision Tree）是在已知各种情况发生概率的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%9F%BA%E7%A1%80/32794">基础</a>上，通过构成决策树来求取净现值的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9C%9F%E6%9C%9B/35704">期望</a>值大于等于零的概率，评价项目风险，判断其可行性的决策分析方法，是直观运用概率分析的一种图解法。由于这种决策分支画成图形很像一棵树的枝干，故称决策树。在机器学习中，决策树是一个预测模型，他代表的是对象属性与对象值之间的一种映射关系。Entropy = 系统的凌乱程度，使用算法<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/ID3">ID3</a>, <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/C4.5">C4.5</a>和C5.0生成树算法使用熵。</p>
-<ul>
-<li>接下来是我自己通过查阅相关资料和书籍后对于决策树的一些了解</li>
-</ul>
-<p>首先我了解决策树的来源是西瓜书，书上对于决策树用于分类做出了一定的阐述。过于专业的术语就不罗列了，我用通俗的语言把自己的浅显理解表示出来，决策树是通过树形结构，在树的节点上根据数据的某些特来将根节点上输入的数据进行逐次的分类，最终到达叶子节点的时候就能够对根节点上输入的数据进行做出分类。可能说起来表述不是特别直观，我们可以通过书上的例子来理解。</p>
-<p><img src="/2021/03/28/guan-yu-jue-ce-shu-yu-sui-ji-sen-lin-de-qian-xian-ren-shi/p1.jpg" alt="对西瓜是否是好瓜的分类"></p>
-<p>可以从图上看出每个节点的分叉不一定就是两个，可以根据该特征的表现而分出多个叉。</p>
-<ul>
-<li>决策树是如何生产的呢？</li>
-</ul>
-<p>之前图上的决策树可以很直观的看出来一个西瓜从输入到决策树之后是如何的一步一步的按照西瓜自身的特征被分成好瓜和坏瓜。这也决策树和其他机器学习方法（比如深度学习）所更具有优势的地方，那就是决策树的可解释性很强，每一步是怎么来的都可以清晰明了的知道，而不像深度网络的训练那样是个黑盒模型，深度网络本身就不可解释，再加上深度网络的层数加深的时候，这个黑盒也就黑上加黑了。</p>
-<p>那么像图上的那个决策树是怎么知道用哪些西瓜的特征呢？ 那些特征又是如何排序的呢？ 特征所占权重又是如何的呢？ </p>
-<p>上面所有的问题其实都是由决策树的一些算法（如ID3,C4.5）来自己决定的，只要给够数据集，这些都就不用考虑。但是我们学习肯定要抱着求知的心态。所以我也就对其中的一种算法ID3算法做一个简单的介绍。</p>
-<ul>
-<li>ID3</li>
-</ul>
-<p>首先我们要了解一个这个算法涉及的一个知识，那就是信息熵。我对于熵的理解十分浅显，仅限于知道它描述一个系统的混乱程度，一个系统越混乱，那么他的熵就越大，而所有的系统从一开始随着时间的推进，系统的熵是会越来越大的，也就是系统会逐渐的进入到混乱的状态。</p>
-<p>对于熵我还是引用一些dalao的说法：{</p>
-<p>基本思想<strong>是以信息熵</strong>为度量构造一棵熵值下降最快的树，到叶子节点处的熵值为零，此时每个叶节点中的实例都属于同一类。</p>
-<p>ID3算法的核心思想就是以信息增益度量属性选择，选择分裂后信息增益最大（我理解为信息熵-不确定性减小最快）的属性进行分裂。</p>
-<p><em>什么是信息增益？</em></p>
-<p>信息增益表示得知特征A的信息而使得类X的信息的不确定性减少的程度。</p>
-<p>设D为用类别对训练元组进行的划分，则D的<a href="https://link.zhihu.com/?target=http://en.wikipedia.org/wiki/Entropy">熵</a>（entropy）表示为：</p>
-<p>其中pi表示第i个类别在整个训练元组中出现的概率，可以用属于此类别元素的数量除以训练元组元素总数量作为估计。</p>
-<p>}</p>
-<p>结合之前的图来理解：</p>
-<p>而对于一棵决策树来说呢，从一开始训练一棵树的时候，会把所有的数据集都丢在根节点，此时根节点中的所有数据都是未分类的，那么可以说这个时候根节点的熵是最大的（因为完全未分类，全混乱的自然是熵最大的），但是在训练的过程中，每个节点都代表了一个特征，经过一个节点的分类之后，在下一层中的每个节点中的数据都是经过上一个节点分类下来的，所以说每个节点中的熵都是相较于上一次更小的，那么这一层的所有节点的熵加在一起的和自然也就小于上一层中所有节点的熵之和，这就是ID3算法的思想了，<strong>每一次的熵之和都递减</strong>。依照这个中心思想来训练一棵树，就会按照数据本身的特性来生成树。</p>
-<ul>
-<li><p>那么决策树如何评价决策树这种分类方式呢？</p>
-</li>
-<li><p>优势：</p>
-</li>
-</ul>
-<p>1、便于理解和解释。树的结构可视化<br>2、训练需要的数据少，其他机器学习模型通常需要数据规范化，比如构建虚拟变量和移除缺失值<br>3、由于训练决策树的数据点的数量导致了决策树的使用开销呈指数分布（训练树模型的时间复杂度是参加训练数据点的对数值）<br>4、能够处理数值型数据和分类数据，其他的技术通常只能用来专门分析某一种的变量类型的数据集；<br>5、能够处理多路输出问题；<br>6、使用白盒模型。如果某种给定的情况在模型中是可以观察的，那么就可以轻易的通过布尔逻辑来解释这种情况，相比之下在黑盒模型中的结果就是很难说明清楚了；<br>7、可以通过数值统计测试来验证该模型。这对解释验证该模型的可靠性成为可能；<br>8、即使是该模型假设的结果越真实模型所提供的数据有些违反，其表现依旧良好；</p>
-<ul>
-<li>缺点总而言之就是——容易过拟合</li>
-</ul>
-<p>1、决策树模型容易产生一个过于复杂的模型，这样的模型对数据的泛化性能会很差。这就是所谓的过拟合，一些策略像剪枝、设置叶节点所需要的最小样本数或者设置数的最大深度就是避免出现该问题的最有效的方法。（剪枝：在机器学习经典算法中，决策树算法的重要性想必大家都是知道的。不管是ID3算法还是比如C4.5算法等等，都面临一个问题，就是通过直接生成的完全决策树对于训练样本来说是“过度拟合”的，说白了是太精确了。由于完全决策树对训练样本的特征描述得“过于精确” ,无法实现对新样本的合理分析, 所以此时它不是一棵分析新数据的最佳决策树。解决这个问题的方法就是对决策树进行剪枝，剪去影响预测精度的分支。常见的剪枝策略有预剪枝(pre -pruning)技术和后剪枝(post -pruning )技术两种。预剪枝技术主要是通过建立某些规则限制决策树的充分生长, 后剪枝技术则是待决策树充分生长完毕后再进行剪枝。）<br>2、决策树可能是不稳定的，因为在数据中的微小变化可能会导致完全不同的树生成。这个问题可以通过决策树的集成来得到缓解；<br>3、在多方面性能最优和简单化概念的要求下，学习一颗最优决策树通常是一个NP难问题；<br>因此，实际的决策树学习算法是基于启发式算法，例如在每个节点进行局部最优决策的贪心算法，这样的算法不能保证返回全局最有决策树，这个问题可以通过集成学习来训练多颗决策树来缓解，这多棵决策树一般通过对特征和样本又放回的随机采样来生成；<br>4、有些概念很难被决策树学习到，因为决策树很难清楚的表述那些概念，例如XOR，奇偶或者复用器问题；<br>5、如果某些类在问题中占主导地位会使得创始的决策树有偏差，因此建议在拟合前先对数据集进行平衡。</p>
-<h2 id="随机森林呢？"><a href="#随机森林呢？" class="headerlink" title="随机森林呢？"></a>随机森林呢？</h2><ul>
-<li>之前说了决策树的各种好处，但是他就是不好在容易过拟合。</li>
-</ul>
-<p>那么如何解决过拟合的问题呢？难道因为容易过拟合我们就要放弃这个好的分类器了吗？ 答案自然是不，既然有问题那我们就去解决，然后就出现了更加神奇的随机森林。</p>
-<p>听名字就可以看出来，一个树是决策树，那么有很多随机的树的时候，那就是随机森林了，说起来十分的简单，其实还是有很多不一样的地方。</p>
-<p>森林有了，那么森林中的树是如何生产的呢？还是随机森林。</p>
-<p>生成规则如下：</p>
-<ul>
-<li>如果训练集大小为N，对于每棵树而言，随机且有放回地从训练集中的抽取N个训练样本（这种采样方式称为bootstrap sample方法)，作为该树的训练集; 从这里我们就可以知道，每棵树训练集都是不同的，而且里面包含重复的训练样本（十分重要）。</li>
-<li>那么为什么要随机抽样训练集呢？</li>
-</ul>
-<p>如果不进行随机抽样，每棵树的训练集都一样，那么最终训练出的树分类结果也是完全一样的，重复的决策树那么该过拟合还是会过拟合。</p>
-<ul>
-<li>那么为什么要有放回地抽样呢?</li>
-</ul>
-<p>我理解的是这样的:如果不是有放回的抽样，那么每棵树的训练样本都是不同的，都是没有交集的，这样每棵树都是”有偏的””，都是绝对”片面的”(当然这样说可能不对)，也就是说每棵树训练出来都是有很大的差异的;而随机森林最后分类取决于多棵树(弱分类器)的投票表决，这种表决应该是”求同””，因此使用完全不同的训练集来训练每棵树这样对最终分类结果是没有帮助的，这样无异于是盲人摸象”。</p>
-<ul>
-<li><p>如果每个样本的特征维度为M，指定一个常数m&lt;&lt;M，随机地从M个特征中选取m个特征子集，每次树进行分裂时，从这m个特征中选择最优的;</p>
-</li>
-<li><p>每棵树都尽最大程度的生长，并且没有剪枝过程。<br>一开始我们提到的随机森林中的”随机”就是指的这里的两个随机性。两个随机性的引入对随机森林的分类性能至关重要。由于它们的引入，使得随机森林不容易陷入过拟合，并且具有很好得抗噪能力(比如:对缺省值不敏感)。</p>
-</li>
-</ul>
-<ul>
-<li><p>随机森林的分类效果和什么因素有关呢？</p>
-<p>1，森林中任意两棵树的相关性:相关性越大，错误率越大;</p>
-<p>2，森林中每棵树的分类能力:每棵树的分类能力越强，整个森林的错误率越低。</p>
-<p><img src="/2021/03/28/guan-yu-jue-ce-shu-yu-sui-ji-sen-lin-de-qian-xian-ren-shi/p2.jpg" alt="这就是一个由三个决策树构成的小森林"></p>
-</li>
-</ul>
-<p>————————————————————————————</p>
-<ul>
-<li>我能够用我自己最通俗的语言来描述随机森林：</li>
-</ul>
-<p>随机森林就像是民主选举，森林就是一个国家，每个决策树都是一个公民，因为每个人的所见所闻都不一样（指训练时候是随机抽样训练的），那么每个公民都对选举（输入的数据或者图片）都有着自己个人的见解（不同数据训练出来的决策树结构都不同，对特征的敏感性也不同），最后每个公民都会对选举做出自己的选择，最后再统计所有公民的选择作为最后的决定。</p>
-<p>正式因为每棵树都与众不同，并且是由不同的很多树共同来做出结果，所以过拟合的问题就这样迎刃而解了。</p>
+                <h1 id="《剑指offer》算法-—-基于JS实现代码"><a href="#《剑指offer》算法-—-基于JS实现代码" class="headerlink" title="《剑指offer》算法 — 基于JS实现代码"></a>《剑指offer》算法 — 基于JS实现代码</h1><h2 id="按照书中题目的顺序11-15题目"><a href="#按照书中题目的顺序11-15题目" class="headerlink" title="按照书中题目的顺序11-15题目"></a>按照书中题目的顺序11-15题目</h2><h2 id="11-二进制中-1-的个数"><a href="#11-二进制中-1-的个数" class="headerlink" title="11.二进制中 1 的个数"></a>11.二进制中 1 的个数</h2><blockquote>
+<p>输入一个整数，输出该数二进制表示中 1 的个数。其中负数用补码表示。<br>解题思路：</p>
+<p>如果一个整数不为 0，那么这个整数至少有一位是 1。如果我们把这个整数减 1，那么原来处在整数最右边的 1 就会变为 0，原来在 1 后面的所有的 0 都会变成 1(如果最右边的 1 后面还有 0 的话)。其余所有位将不会受到影响。</p>
+<p>举个例子：一个二进制数 1100，从右边数起第三位是处于最右边的一个 1。减去 1 后，第三位变成 0，它后面的两位 0 变成了 1，而前面的 1 保持不变，因此得到的结果是 1011.我们发现减 1 的结果是把最右边的一个 1 开始的所有位都取反了。这个时候如果我们再把原来的整数和减去 1 之后的结果做与运算，从原来整数最右边一个 1 那一位开始所有位都会变成 0。如 1100&amp;1011=1000.也就是说，把一个整数减去 1，再和原整数做与运算，会把该整数最右边一个 1 变成 0.那么一个整数的二进制有多少个 1，就可以进行多少次这样的操作。</p>
+</blockquote>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">NumberOf1</span><span class="token punctuation">(</span><span class="token parameter">n</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>n <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    count<span class="token operator">++</span><span class="token punctuation">;</span>
+    n <span class="token operator">=</span> n <span class="token operator">&amp;</span> <span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 与操作自动将数转换成二进制</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">return</span> count<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h2 id="12-数值的整数次方"><a href="#12-数值的整数次方" class="headerlink" title="12.数值的整数次方"></a>12.数值的整数次方</h2><blockquote>
+<p>给定一个 double 类型的浮点数 base 和 int 类型的整数 exponent。求 base 的 exponent 次方。保证 base 和 exponent 不同时为 0.</p>
+</blockquote>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Power</span><span class="token punctuation">(</span><span class="token parameter">base<span class="token punctuation">,</span> exponent</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">return</span> base <span class="token operator">**</span> exponent<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="13-调整数组顺序使奇数位于偶数前面"><a href="#13-调整数组顺序使奇数位于偶数前面" class="headerlink" title="13.调整数组顺序使奇数位于偶数前面"></a>13.调整数组顺序使奇数位于偶数前面</h2><blockquote>
+<p>输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。</p>
+</blockquote>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 额外空间 时间复杂度：O(n) 空间复杂度：O(n)</span>
+<span class="token keyword">function</span> <span class="token function">reOrderArray</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">let</span> a1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> a2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  array<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    item <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">?</span> a1<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">:</span> a2<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token operator">...</span>a1<span class="token punctuation">,</span> <span class="token operator">...</span>a2<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// in-place算法</span>
+<span class="token comment">// 用 i 记录奇数的位置，遍历数组 j = 0，碰到奇数将其放到 i 的位置，将 [i, j-1] 的元素往后移，并让 i+1</span>
+<span class="token comment">// 时间复杂度：O(n^2),假设数组中一般偶数在前，一半奇数在后，每次都要移动n/2个元素,是n^2/4  空间复杂度：O(1)</span>
+<span class="token keyword">function</span> <span class="token function">reOrderArray</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">let</span> tmp <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>tmp <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token comment">//奇数</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> k <span class="token operator">=</span> j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> k <span class="token operator">>=</span> i<span class="token punctuation">;</span> k<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        array<span class="token punctuation">[</span>k <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">&#125;</span>
+      array<span class="token punctuation">[</span>i<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> tmp<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">return</span> array<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="14-链表中倒数第-k-个结点"><a href="#14-链表中倒数第-k-个结点" class="headerlink" title="14.链表中倒数第 k 个结点"></a>14.链表中倒数第 k 个结点</h2><blockquote>
+<p>输入一个链表，输出该链表中倒数第 k 个结点。<br>解题思路 1：</p>
+<p>因为要求链表倒数第 k 个节点，也就是求正数第 length - k 个节点。整体过程如下：</p>
+<ul>
+<li>链表又是个单链表，并且没有保存长度信息。所以需要循环一次计算 length。</li>
+<li>第二次循环找到第 length - k 个节点。</li>
+</ul>
+<p>时间复杂度是 O(N)，需要 2 次循环。</p>
+</blockquote>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/*function ListNode(x)&#123;
+    this.val = x;
+    this.next = null;
+&#125;*/</span>
+
+<span class="token keyword">function</span> <span class="token function">FindKthToTail</span><span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> k</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">let</span> length <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> node <span class="token operator">=</span> head<span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>node<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    length<span class="token operator">++</span><span class="token punctuation">;</span>
+    node <span class="token operator">=</span> node<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>k <span class="token operator">></span> length<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">let</span> offset <span class="token operator">=</span> length <span class="token operator">-</span> k<span class="token punctuation">;</span>
+  node <span class="token operator">=</span> head<span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> offset<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    node <span class="token operator">=</span> node<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">return</span> node<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>解题思路 2：<br>准备两个指针：left（慢）和 right（快）。整体过程如下：</p>
+<ul>
+<li>right 先向右移动 k 位，此时 index(right) - index(left) = k</li>
+<li>left 和 right 一起向右移动，直到 right 抵达边界</li>
+<li>由于 index(right) - index(left) = k，所以 index(left) = index(right) - k = length - k。也就是 left 指针移动到了倒数第 k 个位置</li>
+</ul>
+<p>时间复杂度是 O(N)，但仅需要遍历一次。空间复杂度是 O（1）</p>
+</blockquote>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/*function ListNode(x)&#123;
+    this.val = x;
+    this.next = null;
+&#125;*/</span>
+
+<span class="token keyword">function</span> <span class="token function">FindKthToTail</span><span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> k</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">let</span> right <span class="token operator">=</span> head<span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> k<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>right<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span> <span class="token comment">// 链表长度小于k</span>
+    right <span class="token operator">=</span> right<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token keyword">let</span> left <span class="token operator">=</span> head<span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>right<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    left <span class="token operator">=</span> left<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    right <span class="token operator">=</span> right<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token keyword">return</span> left<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="15-反转链表"><a href="#15-反转链表" class="headerlink" title="15.反转链表"></a>15.反转链表</h2><blockquote>
+<p>输入一个链表，反转链表后，输出新链表的表头。</p>
+</blockquote>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/*function ListNode(x)&#123;
+    this.val = x;
+    this.next = null;
+&#125;*/</span>
+<span class="token keyword">function</span> <span class="token function">ReverseList</span><span class="token punctuation">(</span><span class="token parameter">pHead</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">let</span> prev <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span> <span class="token comment">// 上一个节点</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>pHead<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    curr <span class="token operator">=</span> pHead<span class="token punctuation">;</span> <span class="token comment">// 当前节点</span>
+    pHead <span class="token operator">=</span> pHead<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    curr<span class="token punctuation">.</span>next <span class="token operator">=</span> prev<span class="token punctuation">;</span>
+    prev <span class="token operator">=</span> curr<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">return</span> prev<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id><a href="#" class="headerlink" title></a></h2>
                 
             </div>
             <hr/>
@@ -608,7 +669,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://usageforshen.github.io/2021/03/28/guan-yu-jue-ce-shu-yu-sui-ji-sen-lin-de-qian-xian-ren-shi/">https://usageforshen.github.io/2021/03/28/guan-yu-jue-ce-shu-yu-sui-ji-sen-lin-de-qian-xian-ren-shi/</a>
+                    <a href="https://usageforshen.github.io/2021/09/27/jian-zhi-offer-part3/">https://usageforshen.github.io/2021/09/27/jian-zhi-offer-part3/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -646,12 +707,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
-                                    <span class="chip bg-color">机器学习</span>
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
                                 </a>
                             
-                                <a href="/tags/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%E5%92%8C%E5%86%B3%E7%AD%96%E6%A0%91/">
-                                    <span class="chip bg-color">随机森林和决策树</span>
+                                <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                                    <span class="chip bg-color">剑指offer</span>
                                 </a>
                             
                         </div>
@@ -821,17 +882,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/03/31/guan-yu-bo-ke-tu-pian-bu-xian-shi-wen-ti-de-jie-jue/">
+                <a href="/2021/09/27/jian-zhi-offer-part3/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="关于博客图片不显示问题的解决">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="《剑指offer》part3">
                         
-                        <span class="card-title">关于博客图片不显示问题的解决</span>
+                        <span class="card-title">《剑指offer》part3</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -841,30 +903,31 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    个人博客
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    前端笔记
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA/">
-                        <span class="chip bg-color">博客图片不显示</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
-                    <a href="/tags/%E5%9B%BE%E5%BA%8A/">
-                        <span class="chip bg-color">图床</span>
+                    <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                        <span class="chip bg-color">剑指offer</span>
                     </a>
                     
                 </div>
@@ -878,13 +941,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/09/ren-lian-shi-bie-ru-men-nei-rong-jian-jie/">
+                <a href="/2021/05/27/jian-zhi-offer-part2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="人脸识别入门内容简介">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="《剑指offer》part2">
                         
-                        <span class="card-title">人脸识别入门内容简介</span>
+                        <span class="card-title">《剑指offer》part2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -895,14 +958,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-27
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/" class="post-category">
-                                    人脸识别
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    前端笔记
                                 </a>
                             
                             
@@ -912,12 +975,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">
-                        <span class="chip bg-color">图像处理</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
-                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">机器学习</span>
+                    <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                        <span class="chip bg-color">剑指offer</span>
                     </a>
                     
                 </div>

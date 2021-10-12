@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="关于博客图片不显示问题的解决, code">
+    <meta name="keywords" content="《剑指offer》part4, code">
     <meta name="description" content="Record my graduate life">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>关于博客图片不显示问题的解决 | Precious Life</title>
+    <title>《剑指offer》part4 | Precious Life</title>
     <link rel="icon" type="image/png" href="/medias/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">关于博客图片不显示问题的解决</h1>
+                    <h1 class="description center-align post-title">《剑指offer》part4</h1>
                 </div>
             </div>
         </div>
@@ -432,12 +432,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA/">
-                                <span class="chip bg-color">博客图片不显示</span>
+                            <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                                <span class="chip bg-color">剑指offer</span>
                             </a>
                         
-                            <a href="/tags/%E5%9B%BE%E5%BA%8A/">
-                                <span class="chip bg-color">图床</span>
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
                             </a>
                         
                     </div>
@@ -448,8 +448,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                个人博客
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/" class="post-category">
+                                前端笔记
                             </a>
                         
                     </div>
@@ -461,28 +461,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-31
+                    2021-10-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-01
+                    2021-10-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.6k
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    10 分
+                    5 分
                 </div>
                 
 
@@ -505,189 +505,204 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="博客图片为啥不显示？"><a href="#博客图片为啥不显示？" class="headerlink" title="博客图片为啥不显示？"></a>博客图片为啥不显示？</h1><h2 id="新浪微博防盗链"><a href="#新浪微博防盗链" class="headerlink" title="新浪微博防盗链"></a>新浪微博防盗链</h2><p>之前图方便把图片直接传新浪微博复制链接写入到Markdown中。</p>
-<p>新浪图床是一个非常好的图床，虽然新浪到处被喷，但是在图片外链上一直没采取防盗链措施，近日才开启了防盗链措施。众所周知，图片的加载是需要流量的，但如果服务器的带宽不够大，那么网站的加载速度明显降低，用户的体验就不好，所以不少的小网站站长，会将图片以外链的方式存到新浪图床中。</p>
-<p><img src="/2021/03/31/guan-yu-bo-ke-tu-pian-bu-xian-shi-wen-ti-de-jie-jue/p1.png" alt="403报错"></p>
-<p>在由防盗链的情况下，打开博客，引自新浪微博的图片不显示，console报Http403错误。新浪之前一直被当做免费图床，还是会占用不少的资源，所以在引图片的时候会去溯源是什么网站来请求图片，如果不是新浪白名单的网站IP来请求，新浪服务器就不响应对应资源。</p>
-<h3 id="啥是防盗链？"><a href="#啥是防盗链？" class="headerlink" title="啥是防盗链？"></a>啥是防盗链？</h3><p><strong>新浪的防盗链是Referer 防盗链，这种类型的防盗链方式，非常常见也很简单</strong></p>
-<p><code>Referer</code>在<code>HTTP</code>协议里有特殊的用途，当浏览器向服务器发送请求时，一般会带上<code>Referer</code>头，告知服务器该请求是从哪个页面链接过来的。<code>Referer</code>经常被用于页面访问统计、图片防盗链等。</p>
-<p>当一个<code>HTTP</code>请求发送到<code>CDN</code>服务器后，<code>CDN</code>服务器检查客户<code>URL</code>中所携带的<code>Referer</code>字段的信息，禁止或者允许符合特定规则（支持正则匹配）</p>
-<p>常见<code>CDN</code>服务就会提供此类型的防盗链功能，典型特征是：不能通过其他网站访问，但是直接访问图片资源的<code>URL</code>是可以下载、查看。</p>
-<h3 id="如何解决呢？"><a href="#如何解决呢？" class="headerlink" title="如何解决呢？"></a>如何解决呢？</h3><ul>
-<li>META标签</li>
-</ul>
-<p>在网站的<code>&lt;head&gt;</code>标签内添加一行声明<code>referrer</code>的规则</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>referrer<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>same-origin<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>referrer<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-referrer<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>但是这种方法也不是万无一失的。防盗链本质是检测Http请求中的请求方地址，这样相当于是把Http请求中自己的地址给删除了，可以骗过新浪的防盗链。这样以来就会影响到一些需要这个特性的功能，比如网站统计访问的功能就可能不能正常工作了。</p>
+                <h1 id="《剑指offer》算法-—-基于JS实现代码"><a href="#《剑指offer》算法-—-基于JS实现代码" class="headerlink" title="《剑指offer》算法 — 基于JS实现代码"></a>《剑指offer》算法 — 基于JS实现代码</h1><h2 id="按照书中题目的顺序16-20题目"><a href="#按照书中题目的顺序16-20题目" class="headerlink" title="按照书中题目的顺序16-20题目"></a>按照书中题目的顺序16-20题目</h2><h2 id="16-合并两个排序的链表"><a href="#16-合并两个排序的链表" class="headerlink" title="16.合并两个排序的链表"></a>16.合并两个排序的链表</h2><blockquote>
+<p>输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。<br>解题思路：<br>设置一个“哨兵节点”叫 pHead，整体流程如下：</p>
 <ul>
-<li>IMG标签</li>
-</ul>
-<p>既然是图片资源，那么在<code>HTML5</code>中的<code>img</code>标签有一个<code>referrerpolicy</code>的属性，可以显示声明<code>referrer</code>规则，所以在图片标签中加入一个属性即可。</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;img src&#x3D;&quot;https:&#x2F;&#x2F;wx4.sinaimg.cn&#x2F;large&#x2F;006WvzUFly4g2fbc9ojcbj30j60auq3j.jpg&quot; referrerpolicy&#x3D;&quot;no-referrer&quot;&gt;
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>这样倒是不会影响其他功能，不过缺点是有点麻烦，要对IMG标签添加属性。</p>
+<li><p>如果 pHead1 和 pHead2，均没遍历完：</p>
 <ul>
-<li>自建服务器</li>
-</ul>
-<p>既然免费的服务器不给用那就自建一个，专门用来存图或者（土豪方法）。</p>
-<h3 id="选择其他免费的图床来存"><a href="#选择其他免费的图床来存" class="headerlink" title="选择其他免费的图床来存"></a>选择其他免费的图床来存</h3><ul>
-<li>imgur</li>
-</ul>
-<p>著名的老牌国外图床，2009 年就开始运行了。图片存储稳定可靠。</p>
-<ul>
-<li>速度：国外真的挺快，不过国内半墙</li>
-<li>CDN：FastlyCDN（这家 CDN 的很多节点都被墙了）</li>
-<li>HTTPS：支持（不支持 HTTP2）</li>
-<li>域名： <code>i.imgur.com</code></li>
-</ul>
-<p>追求国内访问速度的还是别用了吧，不过这家图床是真的足够稳定可靠。开放有 API（还有支持免费匿名上传图片的 ClientKey 可以申请），也有很多第三方插件可以用。</p>
-<ul>
-<li>SM.MS</li>
-</ul>
-<p>@showfarm 建的图床，2015 年开始正式运营。</p>
-<ul>
-<li>速度：现在估计是被滥用了没那么快了 购买了更多节点、修改了服务架构，现在全球速度还是不错的。</li>
-<li>CDN：烧风自建的 CDN，有中国香港阿里云、DigitalOcean 欧洲和 Linode 北美等节点</li>
-<li>HTTPS：HTTP 会被 301 跳转 HTTPS（支持 HTTP2）</li>
-<li>域名： <code>ooo.0o0.ooo``i.loli.net</code></li>
-</ul>
-<p>支持 API 操作，图片存储非常可靠，V2EX 钦点的图床。iOS 和 Android 应用已经分别上架 <a href="https://link.zhihu.com/?target=https://itunes.apple.com/app/sm-ms/id1268411917">iTunes</a> 和 <a href="https://link.zhihu.com/?target=https://play.google.com/store/apps/details?id=sm.ms">Play Store</a>，甚至有第三方做的 Telegram Bot。在众多公共图床中最看好它和 imgur。</p>
-<ul>
-<li><p>路过图床</p>
+<li><p>如果 pHead1.val &lt;= pHead2.val，那么当前 node 的 next 指向 pHead1。并且移动 pHead1 指针。</p>
 </li>
-<li><p>支持免注册上传图片，永久存储，支持HTTPS加密访问和调用图片，提供多种图片链接格式</p>
+<li><p>否则，当前 node 的 next 指向 pHead2，移动 pHead2 指针。</p>
 </li>
-<li><p>限制：最大10M</p>
+<li><p>移动 node 指针</p>
 </li>
-<li><p><a href="https://link.zhihu.com/?target=https://imgchr.com/">上传地址</a></p>
+<li><p>继续循环</p>
 </li>
 </ul>
+</li>
+<li><p>否则，结束循环：</p>
 <ul>
-<li><p>极简图床</p>
+<li><p>如果 pHead1 未遍历完，node 的 next 指向 pHead1</p>
 </li>
-<li><p>主要提供图片上传和管理界面，需要用户自己设置微博、七牛云或者阿里云OSS信息</p>
-</li>
-<li><p>目前站点维护，原因不详</p>
-</li>
-<li><p><a href="https://link.zhihu.com/?target=http://jiantuku.com/">上传地址</a></p>
+<li><p>如果 pHead2 未遍历玩，node 的 next 指向 pHead2</p>
 </li>
 </ul>
-<p>还有很多其他的图床就不一一列举。</p>
-<h2 id="图床不行就用自己的"><a href="#图床不行就用自己的" class="headerlink" title="图床不行就用自己的"></a>图床不行就用自己的</h2><h3 id="Github作图床"><a href="#Github作图床" class="headerlink" title="Github作图床"></a>Github作图床</h3><p>用github作图床也是最常用的自己图床的方法，上传博文的时候，连同要用的图片一同上传到github上，在Markdown中用相对路径的写法来引入一同上传到github的图片。</p>
-<ul>
-<li>具体操作方法如下</li>
-<li>HEXO官方给出的方法，这里就直接引用官方网站文档中的内容。</li>
+</li>
 </ul>
-<p>资源（Asset）代表 <code>source</code> 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。比方说，如果你的Hexo项目中只有少量图片，那最简单的方法就是将它们放在 <code>source/images</code> 文件夹中。然后通过类似于 <code>![](/images/image.jpg)</code> 的方法访问它们。</p>
-<h2 id="文章资源文件夹"><a href="#文章资源文件夹" class="headerlink" title="文章资源文件夹"></a>文章资源文件夹</h2><p>对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo也提供了更组织化的方式来管理资源。这个稍微有些复杂但是管理资源非常方便的功能可以通过将 <code>config.yml</code> 文件中的 <code>post_asset_folder</code> 选项设为 <code>true</code> 来打开。</p>
-<pre class="line-numbers language-none"><code class="language-none">_config.ymlpost_asset_folder: true<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>当资源文件管理功能打开后，Hexo将会在你每一次通过 <code>hexo new [layout] &lt;title&gt;</code> 命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个文章文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后，你可以通过相对路径来引用它们，这样你就得到了一个更简单而且方便得多的工作流。</p>
-<h2 id="相对路径引用的标签插件"><a href="#相对路径引用的标签插件" class="headerlink" title="相对路径引用的标签插件"></a>相对路径引用的标签插件</h2><p>通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。在Hexo 2时代，社区创建了很多插件来解决这个问题。但是，随着Hexo 3 的发布，许多新的<a target="_blank" rel="noopener" href="https://hexo.io/docs/tag-plugins#Include-Assets">标签插件</a>被加入到了核心代码中。这使得你可以更简单地在文章中引用你的资源。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#123;% asset_path slug %&#125;
-&#123;% asset_img slug [title] %&#125;
-&#123;% asset_link slug [title] %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>比如说：当你打开文章资源文件夹功能后，你把一个 <code>example.jpg</code> 图片放在了你的资源文件夹中，如果通过使用相对路径的常规 markdown 语法 <code>![](example.jpg)</code> ，它将 <em>不会</em> 出现在首页上。（但是它会在文章中按你期待的方式工作）</p>
-<p>正确的引用图片方式是使用下列的标签插件而不是 markdown ：</p>
-<pre class="line-numbers language-none"><code class="language-none">&#123;% asset_img example.jpg This is an example image %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>通过这种方式，图片将会同时出现在文章和主页以及归档页中。</p>
-<h2 id="Embedding-an-image-using-markdown"><a href="#Embedding-an-image-using-markdown" class="headerlink" title="Embedding an image using markdown"></a>Embedding an image using markdown</h2><p><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a> 3.1.0 introduced a new option that allows you to embed an image in markdown without using <code>asset_img</code> tag plugin.</p>
-<p>To enable:</p>
-<pre class="line-numbers language-none"><code class="language-none">_config.ymlpost_asset_folder: true
-marked:
-  prependRoot: true
-  postAsset: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>Once enabled, an asset image will be automatically resolved to its corresponding post’s path. For example, “image.jpg” is located at “/2020/01/02/foo/image.jpg”, meaning it is an asset image of “/2020/01/02/foo/“ post, <code>![](image.jpg)</code> will be rendered as <code>&lt;img src=&quot;/2020/01/02/foo/image.jpg&quot;&gt;</code>.</p>
-<p><strong>官方提供的方法确实是可以解决这个问题，但是官方的方法没有使用Markdown的官方语法，而是使用大括号的，感觉在Markdown中突然出现这个很不优雅并且不能在书写的过程中预览图片。所以大家对于这个方法酌情使用。</strong></p>
-<h3 id="安装插件-这个方法参照其他博客提供，会在末尾附上链接。"><a href="#安装插件-这个方法参照其他博客提供，会在末尾附上链接。" class="headerlink" title="安装插件 这个方法参照其他博客提供，会在末尾附上链接。"></a>安装插件 这个方法参照其他博客提供，会在末尾附上链接。</h3><p><strong>设置站点配置<code>_config.yml</code></strong>:</p>
-<p>将<code>post_asset_folder: false</code>改为<code>post_asset_folder: true</code></p>
-<p>这点和HEXO官方的方法还是一样的，修改配置文件，这样就可以在hexo  n ‘YOUR BLOG’的时候在_post文件夹中生成一个和博文同名的文件夹，专门用来存储这个博文的图片。</p>
-<p>npm安装插件</p>
-<pre class="line-numbers language-none"><code class="language-none">npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image -- save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>但是这个插件的内容需要修改【不然可能会出Bug】</p>
-<p>打开/node_modules/hexo-asset-image/index.js，将内容更换为下面的代码</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token string">'use strict'</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> cheerio <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'cheerio'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token comment">// http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string</span>
-<span class="token keyword">function</span> <span class="token function">getPosition</span><span class="token punctuation">(</span><span class="token parameter">str<span class="token punctuation">,</span> m<span class="token punctuation">,</span> i</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">return</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token keyword">var</span> version <span class="token operator">=</span> <span class="token function">String</span><span class="token punctuation">(</span>hexo<span class="token punctuation">.</span>version<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-hexo<span class="token punctuation">.</span>extend<span class="token punctuation">.</span>filter<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span><span class="token string">'after_post_render'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-  <span class="token keyword">var</span> config <span class="token operator">=</span> hexo<span class="token punctuation">.</span>config<span class="token punctuation">;</span>
-  <span class="token keyword">if</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>post_asset_folder<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-    	<span class="token keyword">var</span> link <span class="token operator">=</span> data<span class="token punctuation">.</span>permalink<span class="token punctuation">;</span>
-	<span class="token keyword">if</span><span class="token punctuation">(</span>version<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> <span class="token function">Number</span><span class="token punctuation">(</span>version<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span>
-	   <span class="token keyword">var</span> beginPos <span class="token operator">=</span> <span class="token function">getPosition</span><span class="token punctuation">(</span>link<span class="token punctuation">,</span> <span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
-	<span class="token keyword">else</span>
-	   <span class="token keyword">var</span> beginPos <span class="token operator">=</span> <span class="token function">getPosition</span><span class="token punctuation">(</span>link<span class="token punctuation">,</span> <span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
-	<span class="token comment">// In hexo 3.1.1, the permalink of "about" page is like ".../about/index.html".</span>
-	<span class="token keyword">var</span> endPos <span class="token operator">=</span> link<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    link <span class="token operator">=</span> link<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>beginPos<span class="token punctuation">,</span> endPos<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">var</span> toprocess <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'excerpt'</span><span class="token punctuation">,</span> <span class="token string">'more'</span><span class="token punctuation">,</span> <span class="token string">'content'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> toprocess<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-      <span class="token keyword">var</span> key <span class="token operator">=</span> toprocess<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
- 
-      <span class="token keyword">var</span> $ <span class="token operator">=</span> cheerio<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
-        ignoreWhitespace<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-        xmlMode<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-        lowerCaseTags<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-        decodeEntities<span class="token operator">:</span> <span class="token boolean">false</span>
-      <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-      <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-			<span class="token comment">// For windows style path, we replace '\' to '/'.</span>
-			<span class="token keyword">var</span> src <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">'\\'</span><span class="token punctuation">,</span> <span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-			<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">http[s]*.*|\/\/.*</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>src<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
-			   <span class="token operator">!</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^\s*\/</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>src<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-			  <span class="token comment">// For "about" page, the first part of "src" can't be removed.</span>
-			  <span class="token comment">// In addition, to support multi-level local directory.</span>
-			  <span class="token keyword">var</span> linkArray <span class="token operator">=</span> link<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">elem</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-				<span class="token keyword">return</span> elem <span class="token operator">!=</span> <span class="token string">''</span><span class="token punctuation">;</span>
-			  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-			  <span class="token keyword">var</span> srcArray <span class="token operator">=</span> src<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">elem</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-				<span class="token keyword">return</span> elem <span class="token operator">!=</span> <span class="token string">''</span> <span class="token operator">&amp;&amp;</span> elem <span class="token operator">!=</span> <span class="token string">'.'</span><span class="token punctuation">;</span>
-			  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-			  <span class="token keyword">if</span><span class="token punctuation">(</span>srcArray<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">1</span><span class="token punctuation">)</span>
-				srcArray<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-			  src <span class="token operator">=</span> srcArray<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-			  <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">,</span> config<span class="token punctuation">.</span>root <span class="token operator">+</span> link <span class="token operator">+</span> src<span class="token punctuation">)</span><span class="token punctuation">;</span>
-			  console<span class="token punctuation">.</span>info<span class="token operator">&amp;&amp;</span>console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"update link as:-->"</span><span class="token operator">+</span>config<span class="token punctuation">.</span>root <span class="token operator">+</span> link <span class="token operator">+</span> src<span class="token punctuation">)</span><span class="token punctuation">;</span>
-			<span class="token punctuation">&#125;</span>
-		<span class="token punctuation">&#125;</span><span class="token keyword">else</span><span class="token punctuation">&#123;</span>
-			console<span class="token punctuation">.</span>info<span class="token operator">&amp;&amp;</span>console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"no src attr, skipped..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-			console<span class="token punctuation">.</span>info<span class="token operator">&amp;&amp;</span>console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">&#125;</span>
-      <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      data<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> $<span class="token punctuation">.</span><span class="token function">html</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
+<p>时间复杂度是 O(N)，空间复杂度是 O(1)。代码如下：</p>
+</blockquote>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/*function ListNode(x)&#123;
+    this.val = x;
+    this.next = null;
+&#125;*/</span>
+<span class="token keyword">function</span> <span class="token function">Merge</span><span class="token punctuation">(</span><span class="token parameter">pHead1<span class="token punctuation">,</span> pHead2</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>pHead1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">// 如果pHead1链表不存在，就返回pHead2</span>
+    <span class="token keyword">return</span> pHead2<span class="token punctuation">;</span>
   <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>pHead2<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">// 如果pHead2链表不存在，就返回pHead1</span>
+    <span class="token keyword">return</span> pHead1<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
 
-<p>修改后在Markdown的文件中引入方式也有一些不同。具体看见下图。</p>
-<p><img src="/2021/03/31/guan-yu-bo-ke-tu-pian-bu-xian-shi-wen-ti-de-jie-jue/p3.png" alt="同目录下游个同名文件夹中存着图片"></p>
-<p><img src="/2021/03/31/guan-yu-bo-ke-tu-pian-bu-xian-shi-wen-ti-de-jie-jue/p2.png" alt="Markdown中的书写方式"></p>
-<p>然后再运行</p>
-<pre class="line-numbers language-none"><code class="language-none">hexo clean 
-hexo g
-hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+  <span class="token keyword">let</span> pHead <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 新建一个‘哨兵节点’</span>
+  <span class="token keyword">let</span> node <span class="token operator">=</span> pHead<span class="token punctuation">;</span> <span class="token comment">// 头节点的指针</span>
 
-<p>即可在本开启服务查看是否图片展示正常，下面给出示例图片。</p>
-<p><img src="/2021/03/31/guan-yu-bo-ke-tu-pian-bu-xian-shi-wen-ti-de-jie-jue/p4.png" alt="如图显示正常"></p>
-<p><strong>但是缺点 – 没有办法在markdown书写过程中预览图片信息，所以不是特别直观，还是需要注意图片不要引用错误。</strong></p>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>pHead1 <span class="token operator">&amp;&amp;</span> pHead2<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">// pHead1 和 pHead2 都存在时</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>pHead1<span class="token punctuation">.</span>val <span class="token operator">&lt;=</span> pHead2<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      node<span class="token punctuation">.</span>next <span class="token operator">=</span> pHead1<span class="token punctuation">;</span>
+      pHead1 <span class="token operator">=</span> pHead1<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+      node<span class="token punctuation">.</span>next <span class="token operator">=</span> pHead2<span class="token punctuation">;</span>
+      pHead2 <span class="token operator">=</span> pHead2<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    node <span class="token operator">=</span> node<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
 
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>pHead1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">// pHead1 链表长度大于 pHead2</span>
+    node<span class="token punctuation">.</span>next <span class="token operator">=</span> pHead1<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>pHead2<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">// pHead2 链表长度大于 pHead1</span>
+    node<span class="token punctuation">.</span>next <span class="token operator">=</span> pHead2<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">return</span> pHead<span class="token punctuation">.</span>next<span class="token punctuation">;</span> <span class="token comment">// pHead是-1，所以是pHead.next</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="17-树的子结构"><a href="#17-树的子结构" class="headerlink" title="17.树的子结构"></a>17.树的子结构</h2><blockquote>
+<p>输入两棵二叉树 A，B，判断 B 是不是 A 的子结构。（ps：我们约定空树不是任意一个树的子结构）</p>
+</blockquote>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/* function TreeNode(x) &#123;
+    this.val = x;
+    this.left = null;
+    this.right = null;
+&#125; */</span>
+
+<span class="token keyword">function</span> <span class="token function">HasSubtree</span><span class="token punctuation">(</span><span class="token parameter">pRoot1<span class="token punctuation">,</span> pRoot2</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// 当pRoot2的根节点与pRoot1的根节点不同时就需要对pRoot1的左右子树进行遍历</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>pRoot1 <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> pRoot2 <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">// pRoot1 pRoot2 有一个为null，结构就为false</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token function">judgeSubtree</span><span class="token punctuation">(</span>pRoot1<span class="token punctuation">,</span> pRoot2<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token comment">// pRoot2是不是pRoot1的子结构</span>
+    <span class="token function">HasSubtree</span><span class="token punctuation">(</span>pRoot1<span class="token punctuation">.</span>left<span class="token punctuation">,</span> pRoot2<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token comment">// pRoot1的左子树中有没有pRoot2</span>
+    <span class="token function">HasSubtree</span><span class="token punctuation">(</span>pRoot1<span class="token punctuation">.</span>right<span class="token punctuation">,</span> pRoot2<span class="token punctuation">)</span> <span class="token comment">// pRoot1的右子树中有没有pRoot2</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">function</span> <span class="token function">judgeSubtree</span><span class="token punctuation">(</span><span class="token parameter">root1<span class="token punctuation">,</span> root2</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// 对root2进行遍历判断root2 是不是root1 的子结构</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>root2<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>root1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>root1<span class="token punctuation">.</span>val <span class="token operator">!==</span> root2<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token function">judgeSubtree</span><span class="token punctuation">(</span>root1<span class="token punctuation">.</span>left<span class="token punctuation">,</span> root2<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token function">judgeSubtree</span><span class="token punctuation">(</span>root1<span class="token punctuation">.</span>right<span class="token punctuation">,</span> root2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">return</span> <span class="token function">judgeSubtree</span><span class="token punctuation">(</span>root1<span class="token punctuation">.</span>left<span class="token punctuation">,</span> root2<span class="token punctuation">.</span>left<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">judgeSubtree</span><span class="token punctuation">(</span>root1<span class="token punctuation">.</span>right<span class="token punctuation">,</span> root2<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="18-二叉树的镜像"><a href="#18-二叉树的镜像" class="headerlink" title="18.二叉树的镜像"></a>18.二叉树的镜像</h2><blockquote>
+<p>操作给定的二叉树，将其变换为源二叉树的镜像。</p>
+<p><img src="https://raw.githubusercontent.com/Rana1257/Front-end-Collections/Lee/static/img/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F.png" alt="二叉树的镜像"></p>
+</blockquote>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/* function TreeNode(x) &#123;
+  this.val = x;
+  this.left = null;
+  this.right = null;
+&#125; */</span>
+
+<span class="token keyword">function</span> <span class="token function">Mirror</span><span class="token punctuation">(</span><span class="token parameter">root</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>root<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">[</span>root<span class="token punctuation">.</span>left<span class="token punctuation">,</span> root<span class="token punctuation">.</span>right<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>root<span class="token punctuation">.</span>right<span class="token punctuation">,</span> root<span class="token punctuation">.</span>left<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token function">Mirror</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">Mirror</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> root<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="19-顺时针打印矩阵"><a href="#19-顺时针打印矩阵" class="headerlink" title="19.顺时针打印矩阵"></a>19.顺时针打印矩阵</h2><blockquote>
+<p>输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字，例如，如果输入如下 4 X 4 矩阵： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 则依次打印出数字 1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10.</p>
+<p>解题思路：</p>
+<p>怎么找到标记点？对于每一层来说，设左上角的元素坐标为 (i, j)，那么右上角的元素坐标为 (i, n - j - 1)，右下角的元素坐标是 (m - i - 1 ,n - j - 1)，左下角的元素坐标是 (m - i - 1, j)。找到标记点后，就是对行/列进行+/-的过程。<br>怎么防止重复遍历？找到四个坐标点后，每一层的遍历可以拆分成 4 个部分。<br><img src="https://raw.githubusercontent.com/Rana1257/Front-end-Collections/Lee/static/img/%E9%A1%BA%E6%97%B6%E9%92%88%E6%89%93%E5%8D%B0%E7%9F%A9%E9%98%B5.png" alt="顺时针打印矩阵"></p>
+</blockquote>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">printMatrix</span><span class="token punctuation">(</span><span class="token parameter">matrix</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">let</span> m <span class="token operator">=</span> matrix<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  <span class="token keyword">let</span> n <span class="token operator">=</span> matrix<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span> <span class="token comment">//m和n代表矩阵的行数和列数</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>m <span class="token operator">||</span> <span class="token operator">!</span>n<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">//(i,j)表示左上角的那个坐标</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;=</span> m <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> i <span class="token operator">&amp;&amp;</span> j <span class="token operator">&lt;=</span> n <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> j<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> col <span class="token operator">=</span> j<span class="token punctuation">;</span> col <span class="token operator">&lt;=</span> n <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> j<span class="token punctuation">;</span> col<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>col<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//第一行</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> row <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> row <span class="token operator">&lt;=</span> m <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> i<span class="token punctuation">;</span> row<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>row<span class="token punctuation">]</span><span class="token punctuation">[</span>n <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//最后一列</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> m <span class="token operator">-</span> i <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">&amp;&amp;</span> j <span class="token operator">&lt;</span> n <span class="token operator">-</span> j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> col <span class="token operator">=</span> n <span class="token operator">-</span> j <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">;</span> col <span class="token operator">>=</span> j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> col<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>m <span class="token operator">-</span> i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>col<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">&#125;</span>
+
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> row <span class="token operator">=</span> m <span class="token operator">-</span> i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> row <span class="token operator">>=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> row<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>row<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+    i<span class="token operator">++</span><span class="token punctuation">;</span>
+    j<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="20-包含-min-函数的栈"><a href="#20-包含-min-函数的栈" class="headerlink" title="20.包含 min 函数的栈"></a>20.包含 min 函数的栈</h2><blockquote>
+<p>定义栈的数据结构，请在该类型中实现一个能够得到栈中所含最小元素的 min 函数（时间复杂度应为 O（1））。</p>
+<p>注意：保证测试中不会当栈为空的时候，对栈调用 pop()或者 min()或者 top()方法。</p>
+</blockquote>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">const</span> dataStack <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 栈</span>
+<span class="token keyword">const</span> minStack <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 存储栈中最小的元素</span>
+
+<span class="token keyword">function</span> <span class="token function">push</span><span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  dataStack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> length <span class="token operator">=</span> minStack<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>length<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    minStack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>node <span class="token operator">&lt;=</span> minStack<span class="token punctuation">[</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">//每当push一个node，判断这个node：如果不大于minStack中最后一个值，</span>
+    <span class="token comment">//就存入minStack，等号是为了防止push栈中相同的值</span>
+    minStack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">function</span> <span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>dataStack<span class="token punctuation">[</span>dataStack<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">===</span> minStack<span class="token punctuation">[</span>minStack<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    minStack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">return</span> dataStack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">function</span> <span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">return</span> dataStack<span class="token punctuation">[</span>dataStack<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">function</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// write code here</span>
+  <span class="token keyword">return</span> minStack<span class="token punctuation">[</span>minStack<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id><a href="#" class="headerlink" title></a></h2>
                 
             </div>
             <hr/>
@@ -713,7 +728,7 @@ hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://usageforshen.github.io/2021/03/31/guan-yu-bo-ke-tu-pian-bu-xian-shi-wen-ti-de-jie-jue/">https://usageforshen.github.io/2021/03/31/guan-yu-bo-ke-tu-pian-bu-xian-shi-wen-ti-de-jie-jue/</a>
+                    <a href="https://usageforshen.github.io/2021/10/10/jian-zhi-offer-part4/">https://usageforshen.github.io/2021/10/10/jian-zhi-offer-part4/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -751,12 +766,12 @@ hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA/">
-                                    <span class="chip bg-color">博客图片不显示</span>
+                                <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                                    <span class="chip bg-color">剑指offer</span>
                                 </a>
                             
-                                <a href="/tags/%E5%9B%BE%E5%BA%8A/">
-                                    <span class="chip bg-color">图床</span>
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
                                 </a>
                             
                         </div>
@@ -926,17 +941,18 @@ hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/04/04/qian-duan-bi-ji-http-yu-https/">
+                <a href="/2021/10/10/jian-zhi-offer-part4/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="前端笔记 - HTTP与HTTPS">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="《剑指offer》part4">
                         
-                        <span class="card-title">前端笔记 - HTTP与HTTPS</span>
+                        <span class="card-title">《剑指offer》part4</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -946,9 +962,63 @@ hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-04
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    前端笔记
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                        <span class="chip bg-color">剑指offer</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/09/27/jian-zhi-offer-part3/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="《剑指offer》part3">
+                        
+                        <span class="card-title">《剑指offer》part3</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -964,65 +1034,12 @@ hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
-                        <span class="chip bg-color">计算机网络</span>
+                    <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                        <span class="chip bg-color">剑指offer</span>
                     </a>
                     
-                    <a href="/tags/HTTP-HTTPS/">
-                        <span class="chip bg-color">HTTP&amp;HTTPS</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/03/28/guan-yu-jue-ce-shu-yu-sui-ji-sen-lin-de-qian-xian-ren-shi/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="决策树和随机森林是个啥呢？">
-                        
-                        <span class="card-title">决策树和随机森林是个啥呢？</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-28
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    机器学习
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">机器学习</span>
-                    </a>
-                    
-                    <a href="/tags/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%E5%92%8C%E5%86%B3%E7%AD%96%E6%A0%91/">
-                        <span class="chip bg-color">随机森林和决策树</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>

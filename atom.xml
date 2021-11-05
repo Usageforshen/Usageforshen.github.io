@@ -6,7 +6,7 @@
   <link href="https://usageforshen.github.io/atom.xml" rel="self"/>
   
   <link href="https://usageforshen.github.io/"/>
-  <updated>2021-10-12T10:51:51.924Z</updated>
+  <updated>2021-11-05T10:24:40.593Z</updated>
   <id>https://usageforshen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>7种常用排序算法 -- 基于JS实现代码</title>
+    <link href="https://usageforshen.github.io/2021/11/05/7-chong-chang-yong-pai-xu-suan-fa-ji-yu-js-shi-xian-dai-ma/"/>
+    <id>https://usageforshen.github.io/2021/11/05/7-chong-chang-yong-pai-xu-suan-fa-ji-yu-js-shi-xian-dai-ma/</id>
+    <published>2021-11-05T06:33:12.000Z</published>
+    <updated>2021-11-05T10:24:40.593Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;7种常用排序算法—-基于JS实现代码&quot;&gt;&lt;a href=&quot;#7种常用排序算法—-基于JS实现代码&quot; class=&quot;headerlink&quot; title=&quot;7种常用排序算法— 基于JS实现代码&quot;&gt;&lt;/a&gt;7种常用排序算法— 基于JS实现代码&lt;/h1&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="前端笔记" scheme="https://usageforshen.github.io/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="算法" scheme="https://usageforshen.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="排序" scheme="https://usageforshen.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>《剑指offer》part4</title>

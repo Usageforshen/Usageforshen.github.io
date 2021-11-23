@@ -6,7 +6,7 @@
   <link href="https://usageforshen.github.io/atom.xml" rel="self"/>
   
   <link href="https://usageforshen.github.io/"/>
-  <updated>2021-11-05T10:24:40.593Z</updated>
+  <updated>2021-11-23T11:52:35.932Z</updated>
   <id>https://usageforshen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浏览器缓存机制：强缓存&amp;协商缓存</title>
+    <link href="https://usageforshen.github.io/2021/11/23/liu-lan-qi-huan-cun-ji-zhi-qiang-huan-cun-xie-shang-huan-cun/"/>
+    <id>https://usageforshen.github.io/2021/11/23/liu-lan-qi-huan-cun-ji-zhi-qiang-huan-cun-xie-shang-huan-cun/</id>
+    <published>2021-11-23T11:28:23.000Z</published>
+    <updated>2021-11-23T11:52:35.932Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端笔记" scheme="https://usageforshen.github.io/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="计算机网络" scheme="https://usageforshen.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="强缓存&amp;协商缓存" scheme="https://usageforshen.github.io/tags/%E5%BC%BA%E7%BC%93%E5%AD%98-%E5%8D%8F%E5%95%86%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
   
   <entry>
     <title>7种常用排序算法 -- 基于JS实现代码</title>
@@ -48,7 +75,7 @@
     <link href="https://usageforshen.github.io/2021/10/10/jian-zhi-offer-part4/"/>
     <id>https://usageforshen.github.io/2021/10/10/jian-zhi-offer-part4/</id>
     <published>2021-10-10T01:23:32.000Z</published>
-    <updated>2021-10-12T10:51:51.924Z</updated>
+    <updated>2021-11-05T11:44:24.453Z</updated>
     
     
       
@@ -75,7 +102,7 @@
     <link href="https://usageforshen.github.io/2021/09/27/jian-zhi-offer-part3/"/>
     <id>https://usageforshen.github.io/2021/09/27/jian-zhi-offer-part3/</id>
     <published>2021-09-27T05:23:32.000Z</published>
-    <updated>2021-10-12T10:51:19.262Z</updated>
+    <updated>2021-11-05T11:44:30.478Z</updated>
     
     
       
@@ -102,7 +129,7 @@
     <link href="https://usageforshen.github.io/2021/05/27/jian-zhi-offer-part2/"/>
     <id>https://usageforshen.github.io/2021/05/27/jian-zhi-offer-part2/</id>
     <published>2021-05-27T08:23:32.000Z</published>
-    <updated>2021-05-27T08:53:10.639Z</updated>
+    <updated>2021-11-05T11:44:43.767Z</updated>
     
     
       
